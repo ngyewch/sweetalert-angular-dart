@@ -1,0 +1,20 @@
+name: sweetalert_angular_dart
+description: SweetAlert for Angular Dart
+version: 0.1.0
+author: Nick Ng <ngyewch@gmail.com>
+homepage: https://github.com/ngyewch/sweetalert-angular-dart
+
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+
+dependencies:
+  angular2: '>=2.0.0 <3.0.0'
+  browser: ^0.10.0
+
+transformers:
+- angular2:
+    platform_directives:
+    - 'package:angular2/common.dart#COMMON_DIRECTIVES'
+    platform_pipes:
+    - 'package:angular2/common.dart#COMMON_PIPES'
+    entry_points: web/main.dart
