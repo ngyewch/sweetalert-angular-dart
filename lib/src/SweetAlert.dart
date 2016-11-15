@@ -9,30 +9,56 @@ import 'dart:js' as js;
 class SweetAlert {
 
   static void swal(String title,
-      {String text, String type, bool showConfirmButton, bool showCancelButton, String confirmButtonColor, String confirmButtonText, String cancelButtonColor, String cancelButtonText, bool closeOnConfirm, bool closeOnCancel, String imageUrl, bool html, int timer, String animation, String inputPlaceholder, bool showLoaderOnConfirm, Function callback}) {
-    var options = {
-      'title': title
-    };
+      {
+      String text,
+      String type,
+      bool allowEscapeKey,
+      String customClass,
+      bool allowOutsideClick,
+      bool showCancelButton,
+      bool showConfirmButton,
+      String confirmButtonText,
+      String confirmButtonColor,
+      String cancelButtonText,
+      bool closeOnConfirm,
+      bool closeOnCancel,
+      String imageUrl,
+      String imageSize,
+      int timer,
+      bool html,
+      String animation,
+      String inputType,
+      String inputPlaceholder,
+      String inputValue,
+      bool showLoaderOnConfirm,
+      Function callback}) {
+    var options = { 'title': title};
     if (text != null) {
       options['text'] = text;
     }
     if (type != null) {
       options['type'] = type;
     }
-    if (showConfirmButton != null) {
-      options['showConfirmButton'] = showConfirmButton;
+    if (allowEscapeKey != null) {
+      options['allowEscapeKey'] = allowEscapeKey;
+    }
+    if (customClass != null) {
+      options['customClass'] = customClass;
+    }
+    if (allowOutsideClick != null) {
+      options['allowOutsideClick'] = allowOutsideClick;
     }
     if (showCancelButton != null) {
       options['showCancelButton'] = showCancelButton;
     }
-    if (confirmButtonColor != null) {
-      options['confirmButtonColor'] = confirmButtonColor;
+    if (showConfirmButton != null) {
+      options['showConfirmButton'] = showConfirmButton;
     }
     if (confirmButtonText != null) {
       options['confirmButtonText'] = confirmButtonText;
     }
-    if (cancelButtonColor != null) {
-      options['cancelButtonColor'] = cancelButtonColor;
+    if (confirmButtonColor != null) {
+      options['confirmButtonColor'] = confirmButtonColor;
     }
     if (cancelButtonText != null) {
       options['cancelButtonText'] = cancelButtonText;
@@ -46,17 +72,26 @@ class SweetAlert {
     if (imageUrl != null) {
       options['imageUrl'] = imageUrl;
     }
-    if (html != null) {
-      options['html'] = html;
+    if (imageSize != null) {
+      options['imageSize'] = imageSize;
     }
     if (timer != null) {
       options['timer'] = timer;
     }
+    if (html != null) {
+      options['html'] = html;
+    }
     if (animation != null) {
       options['animation'] = animation;
     }
+    if (inputType != null) {
+      options['inputType'] = inputType;
+    }
     if (inputPlaceholder != null) {
       options['inputPlaceholder'] = inputPlaceholder;
+    }
+    if (inputValue != null) {
+      options['inputValue'] = inputValue;
     }
     if (showLoaderOnConfirm != null) {
       options['showLoaderOnConfirm'] = showLoaderOnConfirm;
