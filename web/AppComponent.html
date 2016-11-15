@@ -13,12 +13,12 @@
     </div>
     <div class="ui grid">
         <div class="row">
-            <div class="six wide column">
+            <div class="two wide column">
                 <button class="ui primary centered button" (click)="example1()">
                     Try me!
                 </button>
             </div>
-            <div class="ten wide column">
+            <div class="fourteen wide column">
                 <div class="ui inverted message">
                     <xmp>SweetAlert.swal("Here's a message");</xmp>
                 </div>
@@ -26,12 +26,12 @@
         </div>
 
         <div class="row">
-            <div class="six wide column">
+            <div class="two wide column">
                 <button class="ui primary centered button" (click)="example2()">
                     Try me!
                 </button>
             </div>
-            <div class="ten wide column">
+            <div class="fourteen wide column">
                 <div class="ui inverted message">
                     <xmp>SweetAlert.swal("Here's a message!", text: "It's pretty, isn't it?");</xmp>
                 </div>
@@ -39,12 +39,12 @@
         </div>
 
         <div class="row">
-            <div class="six wide column">
+            <div class="two wide column">
                 <button class="ui primary centered button" (click)="example3()">
                     Try me!
                 </button>
             </div>
-            <div class="ten wide column">
+            <div class="fourteen wide column">
                 <div class="ui inverted message">
                     <xmp>SweetAlert.swal("Good job!", text: "You clicked the button!", type: "success");</xmp>
                 </div>
@@ -52,43 +52,135 @@
         </div>
 
         <div class="row">
-            <div class="six wide column">
+            <div class="two wide column">
                 <button class="ui primary centered button" (click)="example4()">
                     Try me!
                 </button>
             </div>
-            <div class="ten wide column">
+            <div class="fourteen wide column">
                 <div class="ui inverted message">
-                    <xmp></xmp>
+                    <xmp>SweetAlert.swal("Are you sure?",
+    text: "You will not be able to recover this imaginary file!",
+    type: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#DD6B55",
+    confirmButtonText: "Yes, delete it!",
+    closeOnConfirm: false,
+    callback: (result) => SweetAlert.swal("Deleted!", text: "Your imaginary file has been deleted.", type: "success"));</xmp>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="six wide column">
+            <div class="two wide column">
                 <button class="ui primary centered button" (click)="example5()">
-                    Try me!
+                    Try me! [WIP]
                 </button>
             </div>
-            <div class="ten wide column">
+            <div class="fourteen wide column">
                 <div class="ui inverted message">
-                    <xmp></xmp>
+                    <xmp>SweetAlert.swal("Are you sure?",
+    text: "You will not be able to recover this imaginary file!",
+    type: "warning",
+    showCancelButton: true,
+    confirmButtonColor: "#DD6B55",
+    confirmButtonText: "Yes, delete it!",
+    cancelButtonText: "No, cancel plx!",
+    closeOnConfirm: false,
+    closeOnCancel: false,
+    callback: (bool isConfirm) => isConfirm
+        ? SweetAlert.swal("Deleted!", text: "Your imaginary file has been deleted.", type: "success")
+        : SweetAlert.swal("Cancelled", text: "Your imaginary file is safe :)", type: "error"));</xmp>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="six wide column">
+            <div class="two wide column">
                 <button class="ui primary centered button" (click)="example6()">
                     Try me!
                 </button>
             </div>
-            <div class="ten wide column">
+            <div class="fourteen wide column">
                 <div class="ui inverted message">
                     <xmp>SweetAlert.swal("Sweet!",
     text: "Here's a custom image.",
-    imageUrl: "http://t4t5.github.io/sweetalert/example/images/thumbs-up.jpg"
+    imageUrl: "images/thumbs-up.jpg"
 );</xmp>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="two wide column">
+                <button class="ui primary centered button" (click)="example7()">
+                    Try me!
+                </button>
+            </div>
+            <div class="fourteen wide column">
+                <div class="ui inverted message">
+                    <xmp>SweetAlert.swal("HTML <small>Title</small>!",
+    text: 'A custom <span style="color:#F8BB86">html</span> message.',
+    html: true);</xmp>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="two wide column">
+                <button class="ui primary centered button" (click)="example8()">
+                    Try me!
+                </button>
+            </div>
+            <div class="fourteen wide column">
+                <div class="ui inverted message">
+                    <xmp>SweetAlert.swal("Auto close alert!",
+    text: "I will close in 2 seconds.",
+    timer: 2000,
+    showConfirmButton: false);</xmp>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="two wide column">
+                <button class="ui primary centered button" (click)="example9()">
+                    Try me! [WIP]
+                </button>
+            </div>
+            <div class="fourteen wide column">
+                <div class="ui inverted message">
+                    <xmp>SweetAlert.swal("An input!",
+    text: "Write something interesting:",
+    type: "input",
+    showCancelButton: true,
+    closeOnConfirm: false,
+    animation: "slide-from-top",
+    inputPlaceholder: "Write something",
+    callback: (inputValue) => (inputValue is bool)
+        ? inputValue
+        : ((inputValue != "")
+            ? SweetAlert.swal("Nice!", text: "You wrote: " + inputValue, type: "success")
+            : false));</xmp>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="two wide column">
+                <button class="ui primary centered button" (click)="example10()">
+                    Try me!
+                </button>
+            </div>
+            <div class="fourteen wide column">
+                <div class="ui inverted message">
+                    <xmp>SweetAlert.swal("Ajax request example",
+    text: "Submit to run ajax request",
+    type: "info",
+    showCancelButton: true,
+    closeOnConfirm: false,
+    showLoaderOnConfirm: true,
+    callback: (bool isConfirm) => new Timer(const Duration(milliseconds: 2000), () => SweetAlert.swal("Ajax request finished!")));</xmp>
                 </div>
             </div>
         </div>
