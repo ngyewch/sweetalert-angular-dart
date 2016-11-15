@@ -32,7 +32,6 @@ class AppComponent {
     SweetAlert.swal(
       "Sweet!",
       text: "Here's a custom image.",
-      imageUrl: "http://t4t5.github.io/sweetalert/example/images/thumbs-up.jpg"
-    );
+        imageUrl: "images/thumbs-up.jpg");
   }
 }
