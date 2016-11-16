@@ -1,0 +1,75 @@
+{
+  "ngDeps": {
+    "1": "",
+    "3": [
+      {
+        "1": "dart:async",
+        "5": false
+      },
+      {
+        "1": "package:angular2/core.dart",
+        "5": false
+      },
+      {
+        "1": "package:sweetalert_angular_dart/sweetalert_angular_dart.dart",
+        "5": false
+      }
+    ],
+    "5": [
+      {
+        "1": "AppComponent"
+      }
+    ],
+    "6": "AppComponent.dart",
+    "7": [
+      {
+        "1": "package:angular2/core.template.dart",
+        "4": "i0"
+      },
+      {
+        "1": "package:sweetalert_angular_dart/sweetalert_angular_dart.template.dart",
+        "4": "i1"
+      }
+    ]
+  },
+  "type": {
+    "AppComponent": {
+      "class": "Directive",
+      "isComponent": true,
+      "selector": "my-app",
+      "exportAs": null,
+      "type": {
+        "class": "Type",
+        "name": "AppComponent",
+        "moduleUrl": "asset:sweetalert_angular_dart/web/AppComponent.dart",
+        "prefix": null,
+        "isHost": false,
+        "value": null,
+        "diDeps": []
+      },
+      "changeDetection": 6,
+      "inputs": {},
+      "inputTypes": {},
+      "outputs": {},
+      "hostListeners": {},
+      "hostProperties": {},
+      "hostAttributes": {},
+      "lifecycleHooks": [],
+      "template": {
+        "encapsulation": 0,
+        "template": "<div class=\"ui container\">\r\n    <div class=\"ui secondary menu\">\r\n        <div class=\"item\">\r\n            <span class=\"ui header\">\r\n                SweetAlert for Angular Dart\r\n            </span>\r\n        </div>\r\n        <div class=\"right menu\">\r\n            <a class=\"ui item\" href=\"https://github.com/ngyewch/sweetalert-angular-dart\">\r\n                <i class=\"github icon\"></i> Github\r\n            </a>\r\n        </div>\r\n    </div>\r\n    <div class=\"ui grid\">\r\n        <div class=\"row\">\r\n            <div class=\"two wide column\">\r\n                <button class=\"ui primary centered button\" (click)=\"example1()\">\r\n                    Try me!\r\n                </button>\r\n            </div>\r\n            <div class=\"fourteen wide column\">\r\n                <div class=\"ui inverted message\">\r\n                    <xmp>SweetAlert.swal(\"Here's a message\");</xmp>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"two wide column\">\r\n                <button class=\"ui primary centered button\" (click)=\"example2()\">\r\n                    Try me!\r\n                </button>\r\n            </div>\r\n            <div class=\"fourteen wide column\">\r\n                <div class=\"ui inverted message\">\r\n                    <xmp>SweetAlert.swal(\"Here's a message!\", text: \"It's pretty, isn't it?\");</xmp>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"two wide column\">\r\n                <button class=\"ui primary centered button\" (click)=\"example3()\">\r\n                    Try me!\r\n                </button>\r\n            </div>\r\n            <div class=\"fourteen wide column\">\r\n                <div class=\"ui inverted message\">\r\n                    <xmp>SweetAlert.swal(\"Good job!\", text: \"You clicked the button!\", type: \"success\");</xmp>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"two wide column\">\r\n                <button class=\"ui primary centered button\" (click)=\"example4()\">\r\n                    Try me!\r\n                </button>\r\n            </div>\r\n            <div class=\"fourteen wide column\">\r\n                <div class=\"ui inverted message\">\r\n                    <xmp>SweetAlert.swal(\"Are you sure?\",\r\n    text: \"You will not be able to recover this imaginary file!\",\r\n    type: \"warning\",\r\n    showCancelButton: true,\r\n    confirmButtonColor: \"#DD6B55\",\r\n    confirmButtonText: \"Yes, delete it!\",\r\n    closeOnConfirm: false,\r\n    callback: (result) => SweetAlert.swal(\"Deleted!\", text: \"Your imaginary file has been deleted.\", type: \"success\"));</xmp>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"two wide column\">\r\n                <button class=\"ui primary centered button\" (click)=\"example5()\">\r\n                    Try me!\r\n                </button>\r\n            </div>\r\n            <div class=\"fourteen wide column\">\r\n                <div class=\"ui inverted message\">\r\n                    <xmp>SweetAlert.swal(\"Are you sure?\",\r\n    text: \"You will not be able to recover this imaginary file!\",\r\n    type: \"warning\",\r\n    showCancelButton: true,\r\n    confirmButtonColor: \"#DD6B55\",\r\n    confirmButtonText: \"Yes, delete it!\",\r\n    cancelButtonText: \"No, cancel plx!\",\r\n    closeOnConfirm: false,\r\n    closeOnCancel: false,\r\n    callback: (bool isConfirm) => isConfirm\r\n        ? SweetAlert.swal(\"Deleted!\", text: \"Your imaginary file has been deleted.\", type: \"success\")\r\n        : SweetAlert.swal(\"Cancelled\", text: \"Your imaginary file is safe :)\", type: \"error\"));</xmp>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"two wide column\">\r\n                <button class=\"ui primary centered button\" (click)=\"example6()\">\r\n                    Try me!\r\n                </button>\r\n            </div>\r\n            <div class=\"fourteen wide column\">\r\n                <div class=\"ui inverted message\">\r\n                    <xmp>SweetAlert.swal(\"Sweet!\",\r\n    text: \"Here's a custom image.\",\r\n    imageUrl: \"images/thumbs-up.jpg\"\r\n);</xmp>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"two wide column\">\r\n                <button class=\"ui primary centered button\" (click)=\"example7()\">\r\n                    Try me!\r\n                </button>\r\n            </div>\r\n            <div class=\"fourteen wide column\">\r\n                <div class=\"ui inverted message\">\r\n                    <xmp>SweetAlert.swal(\"HTML <small>Title</small>!\",\r\n    text: 'A custom <span style=\"color:#F8BB86\">html</span> message.',\r\n    html: true);</xmp>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"two wide column\">\r\n                <button class=\"ui primary centered button\" (click)=\"example8()\">\r\n                    Try me!\r\n                </button>\r\n            </div>\r\n            <div class=\"fourteen wide column\">\r\n                <div class=\"ui inverted message\">\r\n                    <xmp>SweetAlert.swal(\"Auto close alert!\",\r\n    text: \"I will close in 2 seconds.\",\r\n    timer: 2000,\r\n    showConfirmButton: false);</xmp>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"two wide column\">\r\n                <button class=\"ui primary centered button\" (click)=\"example9()\">\r\n                    Try me!\r\n                </button>\r\n            </div>\r\n            <div class=\"fourteen wide column\">\r\n                <div class=\"ui inverted message\">\r\n                    <xmp>SweetAlert.swal(\"An input!\",\r\n    text: \"Write something interesting:\",\r\n    type: \"input\",\r\n    showCancelButton: true,\r\n    closeOnConfirm: false,\r\n    animation: \"slide-from-top\",\r\n    inputPlaceholder: \"Write something\",\r\n    callback: (inputValue) => (inputValue is bool)\r\n        ? inputValue\r\n        : ((inputValue != \"\")\r\n            ? SweetAlert.swal(\"Nice!\", text: \"You wrote: \" + inputValue, type: \"success\")\r\n            : SweetAlert.showInputError(\"You need to write something!\")));</xmp>\r\n                </div>\r\n            </div>\r\n        </div>\r\n\r\n        <div class=\"row\">\r\n            <div class=\"two wide column\">\r\n                <button class=\"ui primary centered button\" (click)=\"example10()\">\r\n                    Try me!\r\n                </button>\r\n            </div>\r\n            <div class=\"fourteen wide column\">\r\n                <div class=\"ui inverted message\">\r\n                    <xmp>SweetAlert.swal(\"Ajax request example\",\r\n    text: \"Submit to run ajax request\",\r\n    type: \"info\",\r\n    showCancelButton: true,\r\n    closeOnConfirm: false,\r\n    showLoaderOnConfirm: true,\r\n    callback: (bool isConfirm) => new Timer(const Duration(milliseconds: 2000), () => SweetAlert.swal(\"Ajax request finished!\")));</xmp>\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n\r\n</div>\r\n",
+        "templateUrl": "asset:sweetalert_angular_dart/web/AppComponent.html",
+        "styles": [],
+        "styleUrls": [
+          "asset:sweetalert_angular_dart/web/AppComponent.css"
+        ],
+        "ngContentSelectors": []
+      },
+      "providers": [],
+      "viewProviders": [],
+      "queries": [],
+      "viewQueries": []
+    }
+  },
+  "alias": {}
+}
