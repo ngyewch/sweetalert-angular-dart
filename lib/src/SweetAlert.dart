@@ -99,9 +99,13 @@ class SweetAlert {
 
     var args = [];
     args.add(new js.JsObject.jsify(options));
-    if (callback != null) {
+    if (callback is Function) {
       args.add(callback);
     }
     js.context.callMethod("swal", args);
+  }
+
+  static void showInputError(String error) {
+    js.context["swal"].callMethod("showInputError", [error]);
   }
 }

@@ -85,7 +85,7 @@ class AppComponent {
           ? inputValue
           : ((inputValue != "")
               ? SweetAlert.swal("Nice!", text: "You wrote: " + inputValue, type: "success")
-              : false));
+              : SweetAlert.showInputError("You need to write something!")));
   }
 
   void example10() {
