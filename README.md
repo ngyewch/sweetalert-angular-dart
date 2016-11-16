@@ -2,6 +2,8 @@
 
 [SweetAlert](http://t4t5.github.io/sweetalert/) for [Angular Dart](https://angular.io/dart).
 
+[Demo/Docs](https://ngyewch.github.io/sweetalert-angular-dart/)
+
 ## Setup
 
 pubspec.yaml:
