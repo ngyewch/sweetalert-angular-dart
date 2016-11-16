@@ -13,7 +13,7 @@ HTML:
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script type="text/javascript" src="packages/sweetalert_angular_dart/sweetalert-dev.js"></script>
 
 Dart:
 
