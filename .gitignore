@@ -2,7 +2,7 @@
 .packages
 .pub/
 build/
-packages
+#packages
 # Remove the following pattern if you wish to check in your lock file
 pubspec.lock
 
