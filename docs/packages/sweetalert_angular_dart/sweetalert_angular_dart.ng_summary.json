@@ -1,0 +1,22 @@
+{
+  "ngDeps": {
+    "1": "sweetalert_angular_dart",
+    "3": [
+      {
+        "1": "src/SweetAlert.dart",
+        "2": [
+          "SweetAlert"
+        ],
+        "5": false
+      }
+    ],
+    "4": [
+      {
+        "1": "src/SweetAlert.dart"
+      }
+    ],
+    "6": "sweetalert_angular_dart.dart"
+  },
+  "type": {},
+  "alias": {}
+}

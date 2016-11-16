@@ -1,0 +1,36 @@
+{
+  "ngDeps": {
+    "1": "sweetalert_angular_dart",
+    "3": [
+      {
+        "1": "src/SweetAlert.dart",
+        "2": [
+          "SweetAlert"
+        ],
+        "5": false
+      }
+    ],
+    "4": [
+      {
+        "1": "src/SweetAlert.dart"
+      }
+    ],
+    "6": "sweetalert_angular_dart.dart",
+    "7": [
+      {
+        "1": "src/SweetAlert.template.dart",
+        "4": "i0"
+      }
+    ]
+  },
+  "type": {
+    "SweetAlert": {
+      "class": "Identifier",
+      "name": "SweetAlert",
+      "moduleUrl": "asset:sweetalert_angular_dart/lib/src/SweetAlert.dart",
+      "prefix": null,
+      "value": null
+    }
+  },
+  "alias": {}
+}
