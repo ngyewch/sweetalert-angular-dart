@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.3.0
+
+- Upgraded angular2 dependency to 4.x.
+
 ## 0.2.0
 
 - Upgraded angular2 dependency to 3.x
