@@ -5,10 +5,8 @@
 import 'dart:js' as js;
 
 class SweetAlert {
-
   static void swal(String title,
-      {
-      String text,
+      {String text,
       String type,
       bool allowEscapeKey,
       String customClass,
@@ -30,7 +28,7 @@ class SweetAlert {
       String inputValue,
       bool showLoaderOnConfirm,
       Function callback}) {
-    var options = { 'title': title};
+    Map<String, dynamic> options = {'title': title};
     if (text != null) {
       options['text'] = text;
     }
@@ -103,29 +101,28 @@ class SweetAlert {
     js.context.callMethod("swal", args);
   }
 
-  static void setDefaults({
-  String text,
-  String type,
-  bool allowEscapeKey,
-  String customClass,
-  bool allowOutsideClick,
-  bool showCancelButton,
-  bool showConfirmButton,
-  String confirmButtonText,
-  String confirmButtonColor,
-  String cancelButtonText,
-  bool closeOnConfirm,
-  bool closeOnCancel,
-  String imageUrl,
-  String imageSize,
-  int timer,
-  bool html,
-  String animation,
-  String inputType,
-  String inputPlaceholder,
-  String inputValue,
-  bool showLoaderOnConfirm
-  }) {
+  static void setDefaults(
+      {String text,
+      String type,
+      bool allowEscapeKey,
+      String customClass,
+      bool allowOutsideClick,
+      bool showCancelButton,
+      bool showConfirmButton,
+      String confirmButtonText,
+      String confirmButtonColor,
+      String cancelButtonText,
+      bool closeOnConfirm,
+      bool closeOnCancel,
+      String imageUrl,
+      String imageSize,
+      int timer,
+      bool html,
+      String animation,
+      String inputType,
+      String inputPlaceholder,
+      String inputValue,
+      bool showLoaderOnConfirm}) {
     var options = {};
     if (text != null) {
       options['text'] = text;
@@ -191,8 +188,8 @@ class SweetAlert {
       options['showLoaderOnConfirm'] = showLoaderOnConfirm;
     }
 
-    js.context["swal"].callMethod(
-        "setDefaults", [new js.JsObject.jsify(options)]);
+    js.context["swal"]
+        .callMethod("setDefaults", [new js.JsObject.jsify(options)]);
   }
 
   static void close() {
