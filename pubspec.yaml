@@ -5,12 +5,12 @@ author: Nick Ng <ngyewch@gmail.com>
 homepage: https://github.com/ngyewch/sweetalert-angular-dart
 
 environment:
-  sdk: '>=1.23.0 <2.0.0'
+  sdk: '>=2.0.0 <3.0.0'
+
 
 dependencies:
-  angular: '>=4.0.0 <5.0.0'
-  browser: '>=0.10.0 <0.11.0'
+  angular: '>=5.0.0 <6.0.0'
+  build_runner: '>=0.8.10 <0.11.0'
 
-transformers:
-- angular:
-    entry_points: web/main.dart
+dev_dependencies:
+  build_web_compilers: '>=0.3.6 <0.5.0'

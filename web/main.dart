@@ -1,7 +1,7 @@
 import 'package:angular/angular.dart';
 
-import 'AppComponent.dart';
+import 'AppComponent.template.dart' as ng;
 
 main() {
-  bootstrap(AppComponent);
+  runApp(ng.AppComponentNgFactory);
 }
